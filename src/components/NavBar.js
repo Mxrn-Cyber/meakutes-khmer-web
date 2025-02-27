@@ -1,29 +1,34 @@
-import { signOut } from "next-auth/react";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-800 p-4">
-      <ul className="flex space-x-4">
-        <li>
-          <Link href="/" className="text-white">
+      <div className="container mx-auto flex justify-between">
+        <div className="text-white text-lg font-bold">Tourism Explorer</div>
+        <div>
+          <Link href="/" className="text-white mr-4">
             Home
           </Link>
-        </li>
-        <li>
-          <Link href="/profile" className="text-white">
+          <Link href="/discover" className="text-white mr-4">
+            Discover
+          </Link>
+          <Link href="/popular" className="text-white mr-4">
+            Popular
+          </Link>
+          <Link href="/about" className="text-white mr-4">
+            About Us
+          </Link>
+          <Link href="/profile" className="text-white mr-4">
             Profile
           </Link>
-        </li>
-        <li>
-          <button
-            onClick={() => signOut()}
-            className="text-white bg-red-500 p-2 rounded"
-          >
-            Logout
-          </button>
-        </li>
-      </ul>
+          <Link href="/login" className="text-white mr-4">
+            Login
+          </Link>
+          <Link href="/signup" className="text-white">
+            Sign Up
+          </Link>
+        </div>
+      </div>
     </nav>
   );
 };
