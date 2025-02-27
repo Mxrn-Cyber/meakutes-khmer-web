@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Full Container */
+.signup-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/LoginPic.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: visible; /* Allow shadow to be visible */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  position: relative; /* Ensure it doesn't get hidden */
+}
+
+/* Form styling */
+.signup-form-container {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff; /* Fully opaque background */
+  border-radius: 12px;
+  border: 3px solid #4a5568;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25); /* More prominent shadow */
+  position: relative; /* Ensure it casts a shadow */
+}
+
+/* Form Box */
+.signup-form {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #374151;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  position: relative; /* Ensures the shadow isn't cut off */
+}
+
+/* Input field styles */
+.input-field {
+  margin-bottom: 1.5rem;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px #10b981;
+}
+
+/* Submit button styles */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}

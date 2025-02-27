@@ -1,0 +1,27 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  width: calc(30% - 20px); /* Ensures three cards fit in a row */
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.readMore {
+  background-color: #0070f3; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

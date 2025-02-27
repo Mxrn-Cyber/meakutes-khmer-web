@@ -1,0 +1,62 @@
+/* src/components/Footer.module.css */
+.footer {
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.links,
+.services,
+.contact {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.links h3,
+.services h3,
+.contact h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.links ul,
+.services ul,
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li,
+.services ul li,
+.contact ul li {
+  margin: 5px 0;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.socialIcons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  color: #ffcc00; /* Hover color */
+}

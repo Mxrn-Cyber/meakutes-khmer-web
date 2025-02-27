@@ -1,0 +1,173 @@
+.header {
+  background-image: url("/assets/header-bg.png"); /* Make sure this path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh; /* Full screen */
+  position: relative;
+  color: white;
+}
+
+/* Dark overlay */
+.header::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Slightly dark overlay */
+  z-index: 1;
+}
+
+/* Everything inside header */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+/* LOGO - Top Left */
+.logo {
+  position: absolute; /* Ensures it stays at the top */
+  top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: inherit;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  z-index: 10; /* Ensures it stays above the background */
+}
+
+/* NAVIGATION */
+.nav {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #ffcc00;
+}
+
+/* ICONS ON RIGHT */
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #ffcc00;
+}
+
+/* SEARCH BAR */
+.search {
+  display: flex;
+  background: rgb(143, 140, 140);
+  padding: 12px;
+  border-radius: 50px;
+  gap: 15px;
+  align-items: center;
+  width: 650px;
+  justify-content: space-between;
+  margin-top: 300px;
+  /* Centering */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Inputs */
+.searchInput,
+.typeSelect {
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button */
+.findButton {
+  padding: 12px 20px;
+  background-color: white;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.findButton:hover {
+  background: #ffcc00;
+}
+/* Profile Section */
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 30px;
+  top: 20px; /* Adjust this based on the header's design */
+  z-index: 10; /* Ensure it stays above the background */
+  color: white; /* Make sure text is visible on the dark background */
+}
+
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white; /* Adds a border around the avatar */
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize; /* Capitalizes the first letter of the username */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.userName:hover {
+  color: #ffcc00; /* Highlights the username on hover */
+}

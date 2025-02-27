@@ -1,0 +1,11 @@
+.hero {
+  @apply relative h-screen flex flex-col justify-center items-center text-center text-white;
+}
+
+.hero h1 {
+  @apply text-4xl md:text-6xl mb-4;
+}
+
+.hero p {
+  @apply text-xl md:text-2xl mb-8;
+}
